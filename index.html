@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Merge Videos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+      <div class="container">
+          <br><br>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <h1 class="text-center">
+                Merge Videos
+              </h1>
+              <br>
+              <form action="/api/v1" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="file" name="files" multiple required class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-outline-info btn-block">
+                        Merge Videos
+                    </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+      </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>

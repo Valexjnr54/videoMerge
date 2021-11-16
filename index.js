@@ -57,7 +57,7 @@ app.use(express.static("public"));
 const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/api/v1", upload.array("files", 1000), (req, res) => {
